@@ -1,0 +1,28 @@
+//Her legger du all stylingen som har med AddForm.jsx å gjøre (labels, inputs, knapper).
+
+.addform{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    label{
+        font-size: 1rem;
+        color: #000;
+        margin-top: 10px;
+    }
+
+    input{
+        padding: 12px 15px;
+        border: 1px solid #000;
+        border-radius: 12px;
+        font-size: 1rem;
+    }
+
+    button{
+        background-color: #000;
+        color: #fff;
+        padding: 14px;
+        border: none;
+        border-radius: 12px;
+    }
+}
