@@ -9,6 +9,20 @@ import ShoppingList from './components/ShoppingList'
 
 
 function App() {
+
+  const shoppingItems = [
+    {
+      id: 0,
+      title: "Melk",
+      quantity: 2
+    },
+    {
+      id: 1,
+      title: "Egg",
+      quantity: 1
+    }
+  ]
+
   const [count, setCount] = useState(0)
 
   return (

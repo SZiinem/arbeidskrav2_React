@@ -2,8 +2,16 @@
 
 .shopping-list{
     background-color: #a838a8;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 300;
 }
 
 .shopping-item{
+    width: 100%;
+    ul{
     text-decoration: none;
+}
 }

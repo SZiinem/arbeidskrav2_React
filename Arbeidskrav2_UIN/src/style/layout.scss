@@ -1,10 +1,9 @@
 //Her legger du de "globale" tingene. Bakgrunnen på hele siden (body), selve "kortet" (main), og font-innstillinger.
 
-body{
-    background-color: #1a1a1a;
+/*body{
     display: flex;
     flex-wrap: wrap;
-}
+}*/
 
 main{
     background-color: #fff;
@@ -13,4 +12,5 @@ main{
     border-radius: 40px;
     padding: 30px;
     color: #000;
+    text-align: left;
 }
