@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { use, useState } from 'react'
 import './App.css'
 import './style/layout.scss'
 import './style/form.scss'
@@ -23,13 +23,14 @@ function App() {
     }
   ]
 
-  const [count, setCount] = useState(0)
+  const [shoppingList, setShoppingList] = useState(shoppingItems)
+  const [product, setProduct] = useState({title: "", quantity: ""})
 
   return (
     <main>
       <h1>Handleliste</h1>
-      <AddForm />
-      <ShoppingList />
+      <AddForm product={product} setProduct={setProduct} setShoppingList={setShoppingList}/>
+      <ShoppingList shoppingItems={shoppingList} setShoppingList={setShoppingList}/>
     </main>
   )
 }

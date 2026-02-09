@@ -1,17 +1,25 @@
 //Her legger du stylingen for ShoppingList.jsx og ShoppingItem.jsx (ul, li, checkboxer).
 
-.shopping-list{
-    background-color: #a838a8;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
+.shopping-list {
+    list-style: none; /* Fjerner kulepunkter */
+    padding: 0;
     width: 100%;
-    max-width: 300;
 }
 
-.shopping-item{
+.shopping-item {
+    display: flex;       
+    align-items: center;  
+    gap: 1rem;             
     width: 100%;
-    ul{
-    text-decoration: none;
 }
+
+.shopping-item span{
+    flex-grow: 1;
+    text-align: left;
+}
+
+.antall{
+    width: 50px;
+    text-align: center;
 }

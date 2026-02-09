@@ -2,7 +2,7 @@
 
 //Hva som ligger her: Navnet på varen, en checkbox og tallet for antall.
 
-export default function ShoppingItem({name, quantity}){
+export default function ShoppingItem({title, quantity}){
 
 
     return(
@@ -11,10 +11,10 @@ export default function ShoppingItem({name, quantity}){
             <input type="checkbox" id="kjopt" name="kjopt"></input>
 
             {/*Navnet på varen*/}     
-            <span>{name}</span>
+            <span>{title}</span>
 
             {/*Antall varer*/}  
-            <input type="number" value={quantity} min="1" max="99" onChange={() => {}}></input>          
+            <input className="antall" type="number" value={quantity} min="1" max="99" onChange={() => {}}></input>          
         </li>
     )
 }
