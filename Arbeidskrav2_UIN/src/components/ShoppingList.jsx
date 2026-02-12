@@ -4,11 +4,19 @@
 
 import ShoppingItem from "./ShoppingItem"
 
-export default function ShoppingList({shoppingItems}){
+export default function ShoppingList({shoppingItems, updateQuantity, toggleComplete}){
 
     return(
         <ul className="shopping-list">
-            {shoppingItems.map((item) => <ShoppingItem key={item.id} title={item.title} quantity={item.quantity} id={item.id}/>)}
+            {shoppingItems.map((item) => 
+                <ShoppingItem 
+                    key={item.id} 
+                    {...item} //sender title, quantity, id og isCompleted
+                    updateQuantity={updateQuantity} 
+                    toggleComplete={toggleComplete}
+                />
+                )
+            }
         </ul>
     )
 }

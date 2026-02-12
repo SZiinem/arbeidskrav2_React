@@ -33,7 +33,7 @@ export default function AddForm({product, setProduct, setShoppingList}){
         }
 
         const uniqueId = crypto.randomUUID()
-        setShoppingList((prev) => ([...prev, {id: uniqueId, ...product}]))
+        setShoppingList((prev) => ([{id: uniqueId, ...product, isCompleted: false}, ...prev])) //bytter plass på prev og det nye elementet slik at det kommer øverst i arrayet
         console.log(product)
         //setProduct({title: "", quantity: 1}); //nulstiller staten
     }
